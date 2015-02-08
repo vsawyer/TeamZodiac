@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Car2.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayerCar.js">
     <Files>
-      <File FileName="Assets\NewBehaviourScript.js" Line="1" Column="1" />
-      <File FileName="Assets\Car2.js" Line="10" Column="36" />
+      <File FileName="..\Edys\Assets\readme.txt" Line="1" Column="1" />
+      <File FileName="..\Edys\Assets\EdyVehiclePhysics\CarControl.js" Line="1" Column="1" />
+      <File FileName="Assets\PlayerCar.js" Line="41" Column="18" />
+      <File FileName="Assets\Car2.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\JavaScripts\Car.js" Line="18" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

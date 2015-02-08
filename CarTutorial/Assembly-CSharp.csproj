@@ -46,7 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Car.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\BirdsBehaviour.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\BlobShadowController.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\CarCamera.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\CombineChildren.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\DisableObjects.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\Generate2DReflection.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\MeshCombineUtility.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\MirrorReflection.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\ToggleObjectTrigger.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

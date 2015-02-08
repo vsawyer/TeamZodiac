@@ -10,5 +10,5 @@ function Update () {
 	var turnAmount = Input.GetAxis("ad")*turnSpeed;
 	
 	transform.Rotate(0,turnAmount,0);
-	rigidbody.AddRelativeForce(0,0,forwardMoveAmount);
+	rigidbody.AddRelativeForce(0, 0,forwardMoveAmount);
 }

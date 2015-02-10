@@ -55,8 +55,51 @@
      <Compile Include="Assets\Scripts\CSharpScripts\MeshCombineUtility.cs" />
      <Compile Include="Assets\Scripts\CSharpScripts\MirrorReflection.cs" />
      <Compile Include="Assets\Scripts\CSharpScripts\ToggleObjectTrigger.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildR.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRCamera.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRColours.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRCurve.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRGenerator.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRMonitor.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRPoint.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRReset.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRStuntUtil.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRTerrain.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRTexture.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\TrackBuildRTrack.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\Utils\DynamicMeshGenericMultiMaterial.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\Utils\DynamicMeshGenericMultiMaterialMesh.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\Utils\GPSMaths.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\Utils\ProjectUVs.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\Utils\ShaderProperties.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\Utils\SplineMaths.cs" />
+     <Compile Include="Assets\TrackBuildR\Scripts\Utils\XMLVariableConverter.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\TrackBuildR\1.0 Upgrade readme.txt" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\TrackBuildR\readme.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\TrackBuildR\versionhistory.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Valerie/Documents/CarTutorial/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Administrator/Documents/GitHub/TeamZodiac/CarTutorial/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

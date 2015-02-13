@@ -47,8 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Antiroll.js" />
+     <Compile Include="Assets\Scripts\FollowCamera.js" />
      <Compile Include="Assets\Scripts\PlayerCar.js" />
      <Compile Include="Assets\Scripts\PlayerCar1.js" />
+     <Compile Include="Assets\Scripts\TigerLaps.js" />
+     <Compile Include="Assets\Scripts\checkpoints.js" />
+     <Compile Include="Assets\Scripts\simpleCar.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FollowTransform.js" />
@@ -118,7 +122,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField.shader" />
      <None Include="Assets\Standard Assets\Image Based (Pro Only)\EdgeDetectX.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Valerie/Documents/GitHub/Simple-Track/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Valerie/Documents/GitHub/TeamZodiac/Simple-Track/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

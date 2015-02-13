@@ -50,6 +50,11 @@ private var carRight : Vector3;
 private var carFwd : Vector3;
 private var tempVEC : Vector3;
 
+var checkPointArray : Transform[]; //Checkpoint GameObjects stored as an array
+static var currentCheckpoint : int = 0; //Current checkpoint
+static var currentLap : int = 0; //Current lap
+static var startPos : Vector3; //Starting position
+
 
 
 function Start () {
@@ -63,6 +68,7 @@ function Initialize() {
 	carMass = rigidbody.mass;
 	carFwd = Vector3.forward;
 	carRight = Vector3.right;
+	startPos = transform.position;
 	rigidbody.centerOfMass = centerOfMass.localPosition;
 	setUpWheels();
 }

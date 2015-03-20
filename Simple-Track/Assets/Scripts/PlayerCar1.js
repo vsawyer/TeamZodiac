@@ -55,7 +55,18 @@ static var currentCheckpoint : int = 0; //Current checkpoint
 static var currentLap : int = 0; //Current lap
 static var startPos : Vector3; //Starting position
 
+public var cheese : Rigidbody;
+public var frontCar : Transform;
 
+public var prefabGrapple:Transform;
+
+// pyro pyro mania
+public var firecrackers : GameObject;
+public var backCar : Transform;
+public var firecrackerNum : int = 0;
+
+
+private var playerNum : int = 0;
 
 function Start () {
 	Initialize();
@@ -63,19 +74,21 @@ function Start () {
 }
 function Initialize() {
 	carTransform = transform;
+	rigidbody.centerOfMass = centerOfMass.localPosition;
 	carRigidbody = rigidbody;
 	carUp = carTransform.up;
 	carMass = rigidbody.mass;
 	carFwd = Vector3.forward;
 	carRight = Vector3.right;
 	startPos = transform.position;
-	rigidbody.centerOfMass = centerOfMass.localPosition;
+
 	setUpWheels();
 }
 
 function Update() {
 	carPhysicsUpdate();
 	checkInput();
+	checkSpaceBarInput();
 }
 
 function LateUpdate() {
@@ -96,16 +109,45 @@ function rotateVisualWheels() {
 	RFWheelTransform.localEulerAngles.y = horizontal * 30;
 	
 	rotationAmount = carRight * (relativeVelocity.z * 1.6 * Time.deltaTime * Mathf.Rad2Deg);
-	wheelTransform[0].Rotate(0,0,-rotationAmount.x);
-	wheelTransform[1].Rotate(0,0,-rotationAmount.x);
-	wheelTransform[2].Rotate(0,0,-rotationAmount.x);
-	wheelTransform[3].Rotate(0,0,-rotationAmount.x);
+	wheelTransform[0].Rotate(0,0,rotationAmount.x);
+	wheelTransform[1].Rotate(0,0,rotationAmount.x);
+	wheelTransform[2].Rotate(0,0,rotationAmount.x);
+	wheelTransform[3].Rotate(0,0,rotationAmount.x);
 }
 function checkInput() {
-	horizontal = Input.GetAxis("ad");
-	throttle = Input.GetAxis("sw");
+	if (carTransform.name.Contains("player1")) {
+		horizontal = Input.GetAxis("ad");
+		throttle = Input.GetAxis("sw");
+	} else {
+		horizontal = Input.GetAxis("Horizontal");
+		throttle = Input.GetAxis("Vertical");
+		playerNum = 2;
 	}
-	
+}
+function checkSpaceBarInput() {
+	//print('firecrackernum' + firecrackerNum);
+	if(Input.GetButtonDown("Jump")) {	
+		print('firecrackernum' + firecrackerNum);	
+		if (firecrackerNum > 0) {
+			firecrackerNum--;
+		//...spawn the grappling hook prefab
+		//var InstanceGrapple = Instantiate(prefabGrapple, frontCar.position, frontCar.rotation);
+		//...shoot the spawned grappling hook with the forces set in the variables
+		//InstanceGrapple.rigidbody.AddForce(flatDir * 500);
+		//Destroy(InstanceGrapple);
+		//if(Input.GetButtonDown("w")) {
+			//var crackerForce = Vector3(dir.x,dir.z);
+			//var crackerDir = Vector3.Normalize(crackerForce);
+			var instanceCracker = Instantiate(firecrackers, backCar.position, backCar.rotation);
+			//instanceCracker.rigidbody.AddForce(crackerDir *1000);
+		}
+		//pyro pyro mania pyro pyro mania
+		//Instantiate(firecrackers, backCar.position, backCar.rotation);
+		//}
+	}
+}
+
+
 function carPhysicsUpdate() {
 	myRight = carTransform.right;
 	velo = carRigidbody.velocity;
@@ -124,7 +166,7 @@ function carPhysicsUpdate() {
 	if(rev<0.1f) {
 		actualTurn =- actualTurn;
 	}
-	turnVec = (((carUp *turnSpeed)*actualTurn) *carMass)*1600;
+	turnVec = (((carUp *turnSpeed)*actualTurn) *carMass)*800;
 	
 	actualGrip = Mathf.Lerp(100, carGrip, mySpeed * 0.02);
 	imp = myRight*(-slideSpeed*carMass*actualGrip);
@@ -132,6 +174,7 @@ function carPhysicsUpdate() {
 function slowVelocity () {
 	carRigidbody.AddForce(-flatVelo*0.8);
 }
+
 
 function FixedUpdate() {
 	if (mySpeed <maxSpeed) {

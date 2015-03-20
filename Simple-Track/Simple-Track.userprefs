@@ -1,10 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\checkpoints.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerCar1.js">
     <Files>
-      <File FileName="Assets\Scripts\checkpoints.js" Line="21" Column="73" />
-      <File FileName="Assets\Scripts\PlayerCar1.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\simpleCar.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GetAndCreateCharacters.js" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\AntirollBar.js" Line="13" Column="16" />
+      <File FileName="..\..\..\Edys\Assets\EdyVehiclePhysics\CarAntiRollBar.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Antiroll.js" Line="16" Column="23" />
+      <File FileName="Assets\Scripts\AntiRollBar.cs" Line="30" Column="3" />
+      <File FileName="Assets\Scripts\PlayerCar1.js" Line="120" Column="27" />
+      <File FileName="Assets\Scripts\ItemBox.js" Line="19" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

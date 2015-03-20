@@ -50,10 +50,15 @@ private var carRight : Vector3;
 private var carFwd : Vector3;
 private var tempVEC : Vector3;
 
+private var cheeseNum;
+
 var checkPointArray : Transform[]; //Checkpoint GameObjects stored as an array
 static var currentCheckpoint : int = 0; //Current checkpoint
 static var currentLap : int = 0; //Current lap
 static var startPos : Vector3; //Starting position
+
+public var cheese : Rigidbody;
+public var frontCar : Transform;
 
 function Start () {
 	Initialize();
@@ -74,6 +79,7 @@ function Initialize() {
 function Update() {
 	carPhysicsUpdate();
 	checkInput();
+	checkSpacebarInput();
 }
 
 function LateUpdate() {
@@ -94,15 +100,29 @@ function rotateVisualWheels() {
 	RFWheelTransform.localEulerAngles.y = horizontal * 30;
 	
 	rotationAmount = carRight * (relativeVelocity.z * 1.6 * Time.deltaTime * Mathf.Rad2Deg);
-	wheelTransform[0].Rotate(0,0,-rotationAmount.x);
-	wheelTransform[1].Rotate(0,0,-rotationAmount.x);
-	wheelTransform[2].Rotate(0,0,-rotationAmount.x);
-	wheelTransform[3].Rotate(0,0,-rotationAmount.x);
+	wheelTransform[0].Rotate(0,0,rotationAmount.x);
+	wheelTransform[1].Rotate(0,0,rotationAmount.x);
+	wheelTransform[2].Rotate(0,0,rotationAmount.x);
+	wheelTransform[3].Rotate(0,0,rotationAmount.x);
 }
 function checkInput() {
-	horizontal = Input.GetAxis("Horizontal");
-	throttle = Input.GetAxis("Vertical");
+	if (carTransform.name.Contains("player1")) {
+		horizontal = Input.GetAxis("ad");
+		throttle = Input.GetAxis("sw");
+	} else {
+		horizontal = Input.GetAxis("Horizontal");
+		throttle = Input.GetAxis("Vertical");
 	}
+}
+
+function checkSpacebarInput() {
+	var cheeseInstance : Rigidbody;
+	if (Input.GetButtonDown("Jump")) {
+		cheeseInstance = Instantiate(cheese, frontCar.position, frontCar.rotation) as Rigidbody;
+		cheeseInstance.AddForce(flatDir * 4000);
+	}
+}
+
 	
 function carPhysicsUpdate() {
 	myRight = carTransform.right;
@@ -122,7 +142,7 @@ function carPhysicsUpdate() {
 	if(rev<0.1f) {
 		actualTurn =- actualTurn;
 	}
-	turnVec = (((carUp *turnSpeed)*actualTurn) *carMass)*1600;
+	turnVec = (((carUp *turnSpeed)*actualTurn) *carMass)*800;
 	
 	actualGrip = Mathf.Lerp(100, carGrip, mySpeed * 0.02);
 	imp = myRight*(-slideSpeed*carMass*actualGrip);

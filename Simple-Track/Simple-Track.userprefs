@@ -1,14 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerCar1.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TrackBuildR/readme.txt">
     <Files>
-      <File FileName="Assets\Scripts\GetAndCreateCharacters.js" Line="19" Column="1" />
-      <File FileName="Assets\Scripts\AntirollBar.js" Line="13" Column="16" />
-      <File FileName="..\..\..\Edys\Assets\EdyVehiclePhysics\CarAntiRollBar.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Antiroll.js" Line="16" Column="23" />
-      <File FileName="Assets\Scripts\AntiRollBar.cs" Line="30" Column="3" />
-      <File FileName="Assets\Scripts\PlayerCar1.js" Line="120" Column="27" />
-      <File FileName="Assets\Scripts\ItemBox.js" Line="19" Column="6" />
+      <File FileName="Assets/TrackBuildR/readme.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

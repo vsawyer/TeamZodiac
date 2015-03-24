@@ -13,6 +13,8 @@ Project("{B0D7AC49-D523-7433-EE07-2E261DEFBC7D}") = "Simple-Track", "Assembly-Un
 EndProject
 Project("{B0D7AC49-D523-7433-EE07-2E261DEFBC7D}") = "Simple-Track", "Assembly-UnityScript-Editor-firstpass.unityproj", "{459D012F-5993-B646-B9F7-C81C86675FF4}"
 EndProject
+Project("{B0D7AC49-D523-7433-EE07-2E261DEFBC7D}") = "Simple-Track", "Assembly-UnityScript-Editor.unityproj", "{316B47BC-9940-9061-BF80-A449452EAD1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,11 +45,15 @@ Global
 		{459D012F-5993-B646-B9F7-C81C86675FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459D012F-5993-B646-B9F7-C81C86675FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459D012F-5993-B646-B9F7-C81C86675FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{316B47BC-9940-9061-BF80-A449452EAD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316B47BC-9940-9061-BF80-A449452EAD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316B47BC-9940-9061-BF80-A449452EAD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316B47BC-9940-9061-BF80-A449452EAD1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																											GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
